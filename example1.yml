@@ -1,0 +1,12 @@
+---
+- name: Welcome to SOFSYSTEM BootCamp 2019 in Algeria 
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Hostname my machine
+    shell: hostname 
+    register: result
+  - name: My machine 
+    shell: echo {{result}}
+    
