@@ -5,9 +5,9 @@
   tasks:
  
   - name: Get FileSystem of my server 
-    shell: df --output=source,used,avail /home/ops
+    shell: df --output=source,used,avail /home
     register: result
   - name: Filesystem of my server  
     debug:
-      msg: "Size FileSystem of my server  on /home/ops  is : {{ result.stdout }}"
+      msg: "Size FileSystem of my server  on /home  is : {{ result.stdout }}"
      
