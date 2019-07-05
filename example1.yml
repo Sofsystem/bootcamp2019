@@ -4,10 +4,10 @@
  
   tasks:
  
-  - name: Hostname my machine
-    shell: hostname 
+  - name: Get FileSystem of my server 
+    shell: df -H 
     register: result
-  - name: My machine 
+  - name: Filesystem of my server  
     debug:
-      msg: "Hostname machin is : {{ result.stdout }}"
+      msg: "Size FileSystem of my server  is : {{ result.stdout }}"
      
