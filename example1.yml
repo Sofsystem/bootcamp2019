@@ -9,5 +9,5 @@
     register: result
   - name: My machine 
     debug:
-    msg: The hostname machine is {{ result }}
+      msg: "Hostname machin is : {{ result.stdout }}"
      
