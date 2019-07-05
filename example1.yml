@@ -1,5 +1,5 @@
 ---
-- name: Welcome to SOFSYSTEM BootCamp 2019 in Algeria 
+- name: Welcome to SOFSYSTEM BootCamp2019 Algeria 
   hosts: all
  
   tasks:
@@ -8,5 +8,6 @@
     shell: hostname 
     register: result
   - name: My machine 
-    shell: echo {{result}}
-    
+    debug:
+       msg: The hostname machine is {{ result }}
+     tags: debug_info
