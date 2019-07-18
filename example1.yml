@@ -5,6 +5,8 @@
   tasks:
   - name: Get FileSystem of my server 
     shell: df -H /home
+    become: yes
+    become_user: root
     register: result
   - name: Filesystem of my server  
     debug:
