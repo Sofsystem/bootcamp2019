@@ -1,6 +1,6 @@
 ---
 - name: Welcome to SOFSYSTEM BootCamp2019 Algeria 
-  hosts: all
+  hosts: localhost
  
   tasks:
   - name: Get FileSystem of my server 
