@@ -5,8 +5,7 @@
   tasks:
   - name: Get FileSystem of my server 
     shell: df -H
-    become: yes
-    become_user: root
+    become_user: git
     register: result
   - name: Filesystem of my server  
     debug:
