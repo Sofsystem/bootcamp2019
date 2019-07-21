@@ -4,7 +4,7 @@
  
   tasks:
   - name: Get FileSystem of my server 
-    shell: ansible all -a "/bin/echo hello"
+    shell: df -H
     become: yes
     become_user: root
     register: result
